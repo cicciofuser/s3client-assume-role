@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.cicciofuser.cloud</groupId>
 	<artifactId>s3client-assume-role</artifactId>
 	<name>s3client-assume-role</name>
@@ -11,30 +11,30 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-    <aws.java.sdk.version>1.11.323</aws.java.sdk.version>
+		<aws.java.sdk.version>1.11.323</aws.java.sdk.version>
 	</properties>
 
 	<dependencies>
-    <dependency>
-      <groupId>com.amazonaws</groupId>
-      <artifactId>aws-java-sdk-s3</artifactId>
-      <version>${aws.java.sdk.version}</version>      
-    </dependency>
-    <dependency>
-      <groupId>com.amazonaws</groupId>
-      <artifactId>aws-java-sdk-sts</artifactId>
-      <version>${aws.java.sdk.version}</version>
-    </dependency>
-    <!-- TEST -->    
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-s3</artifactId>
+			<version>${aws.java.sdk.version}</version>      
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-sts</artifactId>
+			<version>${aws.java.sdk.version}</version>
+		</dependency>
+	<!-- TEST -->    
 	</dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-    </plugins>
+  	<build>
+		<plugins>
+	      	<plugin>
+				<groupId>org.springframework.boot</groupId>
+		  		<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+	    </plugins>
   </build>
     
 </project>
